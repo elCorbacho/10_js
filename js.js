@@ -505,6 +505,24 @@ function transformacionCondicional (frase) {
     }
 }
 
-console.log(transformacionCondicional("moniaco"))
+console.log(transformacionCondicional("moniaco"));
 
-console.log()
+
+console.log("------------------------------------------------------------------")
+
+
+    // ARREGLOS ARREGLOS  // ARREGLOS ARREGLOS  // ARREGLOS ARREGLOS  // ARREGLOS ARREGLOS  // ARREGLOS ARREGLOS  // ARREGLOS ARREGLOS  // ARREGLOS ARREGLOS  // ARREGLOS ARREGLOS  // ARREGLOS ARREGLOS  // ARREGLOS ARREGLOS
+
+//     Ejercicio
+// Crea una función llamada primerElemento que reciba un arreglo y retorne el primer elemento del arreglo.
+
+// Ejemplo:
+
+// primerElemento(["Juan", "Pedro", "Ana", "Luis"]) // Juan
+// primerElemento([1, 2, 3, 4, 5]) // 1
+
+function primerElemento (arreglo) {
+    return arreglo[0]
+}
+arreglo = ["Juan", "Pedro", "Ana"];
+console.log(primerElemento(arreglo))
