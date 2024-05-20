@@ -526,3 +526,16 @@ function primerElemento (arreglo) {
 }
 arreglo = ["Juan", "Pedro", "Ana"];
 console.log(primerElemento(arreglo))
+
+
+
+function largoArreglo (nombres) {
+    if (nombres.length >5) {
+        return "muchos"
+    } else {
+        return "pocos"
+    }
+}
+
+nombre = ["Juan", "Pedro", "Ana", "Luis"]
+console.log(largoArreglo(nombre))
