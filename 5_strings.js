@@ -217,3 +217,31 @@ console.log(transformacionCondicional("moniaco"));
 console.log("------------------------------------------------------------------")
 
 
+/* Escribe tu código aquí */
+
+function mostrarLasPalabrasQueEmpiezanConA (arreglo) {
+    for (i=0; i <= arreglo.length; i++) {
+        primeraletra = arreglo[i];
+        if (primeraletra = "a") {
+            console.log(arreglo[i])
+        }
+    }
+}
+
+mostrarLasPalabrasQueEmpiezanConA(["manzana", "arándanos", "naranja", "pera", "uva"])
+mostrarLasPalabrasQueEmpiezanConA(["gato", "perro", "ardilla", "pez", "conejo", "alce"])
+mostrarLasPalabrasQueEmpiezanConA(["rojo", "azul", "verde", "amarillo"])
+
+
+
+let arreglo = ["Manzana", "Banana", "Cereza"];
+let primeraLetra;
+
+for (let i = 0; i < arreglo.length; i++) {
+    primeraLetra = arreglo[i].substring(0, 1);
+    console.log("La primera letra de " + arreglo[i] + " es " + primeraLetra);
+}
+
+
+nombres = ["Juan", "Pedro", "Ana", "Luis", "Carlos", "Maria"]
+console.log(nombres[0][0]) // Maria

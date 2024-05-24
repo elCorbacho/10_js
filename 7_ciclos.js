@@ -162,12 +162,20 @@ for (contador = 1; contador <= 10; contador = contador + 2) {
 console.log("-----------------------------------")
 
 
+
+
+console.log("-----------------------------------")  
+
+
 function sumatoriaPares (numero) {
-    suma = 1
-    for (contador = 1; contador <= numero; contador + 1) {
-        suma += contador
+suma = 0
+    for (contador = 1; contador <= numero; contador = contador + 1) {
+        if (contador % 2 == 0) {        
+            suma = suma + contador
+        }
     }
-    console.log(suma)
+    return suma
 }
 
-sumatoriaPares(5)
+
+console.log(sumatoriaPares(5))
