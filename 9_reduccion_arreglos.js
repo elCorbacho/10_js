@@ -164,17 +164,42 @@ console.log(juntarPalabras(["Hola", "Mundo"]))
 
 
 console.log("-----------------------------")
+console.log("-----------------------------")  
+console.log("-----------------------------")
+console.log("-----------------------------")  
 
 
 //todo Crea una función llamada mensajeOculto que reciba un arreglo y retorne un texto con el mensaje escondido en el arreglo utilizando solo la primera letra de cada elemento del arreglo.
-function mensajeOculto (arreglo){
+function mensajeOculto1 (arreglo){
   palabra = ""
   i=0
   while (i<arreglo.length) {
       secreto = arreglo[i].substring(0,1)
-      palabra += " " + secreto
+      palabra += secreto
       i++
   }
   return palabra
 }
-console.log(mensajeOculto(["Hola", "Mundo"])) // o a
+console.log(mensajeOculto1(["ABCD", "EDFGH"])) // o a
+
+
+
+console.log("-----------------------------")  
+console.log("-----------------------------")  
+
+//todo Crea una función llamada mensajeOculto que reciba un arreglo y retorne un texto con el mensaje escondido en el arreglo utilizando solo la primera letra de cada elemento del arreglo.
+
+function mensajeOculto (arreglo) {
+  palabra =""
+  for (i=0; i < arreglo.length; i++) {
+    if (i % 2 == 0) {
+        secreto = arreglo[i].substring(0,1)
+        palabra += " " + secreto
+    }
+  }
+  return palabra
+}
+
+console.log(mensajeOculto(["Tronco", "Perro", "Oso", "Gato", "Perro", "Loro", "Onda"]))
+
+
